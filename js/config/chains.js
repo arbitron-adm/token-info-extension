@@ -69,14 +69,14 @@ const CHAIN_INFO = {
 const ALLOWED_NETWORKS = [
     "ton",
     "bsc",
-    "solana",
-    "ethereum",
-    "polygon",
+    "sol",
+    "eth",
+    "pol",
     "base",
-    "optimism",
-    "avalanche",
+    "opt",
+    "avax",
     "tron",
-    "arbitrum",
+    "arb",
     "sui"
 ];
 const CHAIN_NAME_MAPPING = {
@@ -147,7 +147,7 @@ const CHAIN_NAME_MAPPING = {
     "arbieth": "arb",
     "arbinova": "arb",
     "arbitrum_nova": "arb",
-    "arbnova": "arbitrum",
+    "arbnova": "arb",
     "sui": "sui",
 };
 function isNetworkAllowed(networkName) {

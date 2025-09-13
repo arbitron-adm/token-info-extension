@@ -421,7 +421,7 @@ class ArbitronPanel {
                 this.tokenJustChanged = true;
                 const dexSelect = this.panel?.querySelector('#dex-contract-select');
                 if (dexSelect && oldUserContract) {
-                    dexSelect.innerHTML = '<option value=""><span class="spinner"></span>Loading contracts...</option>';
+                    dexSelect.innerHTML = '<option value="">Loading contracts...</option>';
                 }
                 if (oldUserContract) {
                     StorageManager.loadSettings().then(settings => {
@@ -853,11 +853,7 @@ class ArbitronPanel {
             if (gmgn) {
                 analyticsLinks.push(`<a href='${gmgn}' target='_blank' class="external-link">GMGN</a>`);
             }
-            
-            const chainLower = chain.toLowerCase();
-            const normalizedChain = CHAIN_NAME_MAPPING[chainLower] || chainLower;
-            const chainInfo = CHAIN_INFO[normalizedChain];
-            
+            const chainInfo = CHAIN_INFO[CHAIN_NAME_MAPPING[chain]];
             if (chainInfo && contract) {
                 const contractUrl = chainInfo.contract_link.replace('{contract}', contract);
                 const holdersUrl = chainInfo.holders_link.replace('{contract}', contract);

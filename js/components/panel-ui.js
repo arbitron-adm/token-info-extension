@@ -181,6 +181,7 @@ class PanelUI {
         if (contract.length <= 12) return contract;
         return contract.substring(0, 6) + '...' + contract.substring(contract.length - 6);
     }
+    
     static updateExchanges(container, exchanges) {
         if (exchanges && exchanges.length > 0) {
             container.innerHTML = exchanges.map(exchange => `
