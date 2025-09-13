@@ -1,0 +1,185 @@
+/* Common styles for all components */
+.quick-links {
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+.quick-link {
+    color: #64B5F6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.quick-link:hover {
+    color: #90CAF9;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.summary-label {
+    color: #ccc;
+}
+
+.summary-value {
+    color: #2196F3;
+    font-weight: 600;
+}
+
+.exchanges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.exchange-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.2s;
+}
+
+.exchange-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.exchange-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.exchange-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.exchange-pair {
+    font-size: 11px;
+    color: #888;
+    font-family: monospace;
+}
+
+.exchange-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.price-main {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+.price-change {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.price-change.positive {
+    color: #4CAF50;
+}
+
+.price-change.negative {
+    color: #f44336;
+}
+
+.price-change.neutral {
+    color: #ccc;
+}
+
+.exchange-metrics {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 11px;
+}
+
+.metric-label {
+    color: #888;
+}
+
+.metric-value {
+    color: #fff;
+    font-weight: 500;
+}
+
+.bid-ask {
+    display: flex;
+    gap: 2px;
+    font-family: monospace;
+    font-size: 10px;
+}
+
+.bid {
+    color: #4CAF50;
+}
+
+.ask {
+    color: #f44336;
+}
+
+.separator {
+    color: #888;
+}
+
+/* Состояния для копирования */
+.copyable-success {
+    color: #4CAF50 !important;
+}
+
+.copyable-error {
+    color: #f44336 !important;
+}
+
+/* Состояния отображения */
+.show-content {
+    display: block !important;
+}
+
+.hide-content {
+    display: none !important;
+}
+
+/* Дополнительные CSS классы для управления отображением */
+.arbitron-content.show-content {
+    display: block !important;
+}
+
+.arbitron-content.hide-content {
+    display: none !important;
+}
+
+.arbitron-settings.show-content {
+    display: block !important;
+}
+
+.arbitron-settings.hide-content {
+    display: none !important;
+}

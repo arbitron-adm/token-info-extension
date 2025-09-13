@@ -1,0 +1,283 @@
+.networks-scroll-container {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 4px;
+}
+.networks-scroll-container::-webkit-scrollbar {
+    width: 6px;
+}
+.networks-scroll-container::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+    border-radius: 3px;
+}
+.networks-scroll-container::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 3px;
+}
+.networks-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.5);
+}
+.networks-info-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 16px;
+    color: #ffffff;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border: 1px solid #333;
+}
+.networks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #333;
+}
+.networks-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.networks-count-with-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.networks-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.networks-count {
+    font-size: 12px;
+    color: #888;
+    font-weight: 500;
+}
+.quick-links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.quick-links-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.links-label {
+    font-size: 10px;
+    color: #aaa;
+    font-weight: 600;
+}
+.quick-links {
+    font-size: 11px;
+    line-height: 1.2;
+}
+.quick-link {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    margin-right: 2px;
+}
+.quick-link.deposit {
+    color: #4CAF50;
+}
+.quick-link.deposit:hover {
+    color: #66BB6A;
+}
+.quick-link.withdraw {
+    color: #FF9800;
+}
+.quick-link.withdraw:hover {
+    color: #FFB74D;
+}
+.networks-summary {
+    margin: 16px 0;
+    padding: 12px;
+    background: rgba(76, 175, 80, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid #4CAF50;
+}
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    font-size: 12px;
+}
+.summary-label {
+    color: #ccc;
+}
+.summary-value {
+    color: #4CAF50;
+    font-weight: 600;
+}
+.network-types {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.types-label {
+    font-size: 12px;
+    color: #ccc;
+}
+.network-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.network-chip {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.network-chip.more {
+    background: rgba(255,255,255,0.1);
+    color: #888;
+}
+.exchanges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.exchange-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.2s;
+}
+.exchange-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.2);
+}
+.exchange-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.exchange-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.exchange-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4CAF50;
+}
+.networks-count {
+    font-size: 11px;
+    color: #888;
+}
+.exchange-actions {
+    display: flex;
+    gap: 8px;
+}
+.action-btn {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.deposit-btn {
+    background: #4CAF50;
+    color: white;
+}
+.deposit-btn:hover {
+    background: #66BB6A;
+}
+.withdraw-btn {
+    background: #FF9800;
+    color: white;
+}
+.withdraw-btn:hover {
+    background: #FFB74D;
+}
+.networks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+}
+.network-card {
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+    padding: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.network-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.network-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+.status-indicators {
+    display: flex;
+    gap: 4px;
+}
+.status-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    font-weight: 600;
+    color: white;
+}
+.status-dot.active {
+    background: #4CAF50;
+}
+.status-dot.inactive {
+    background: #f44336;
+}
+.status-dot.unknown {
+    background: #9E9E9E;
+}
+.network-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.detail-label {
+    color: #888;
+}
+.detail-value {
+    color: #fff;
+    font-weight: 500;
+}
+.copyable-contract {
+    color: #64B5F6;
+    cursor: pointer;
+    font-family: monospace;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+.copyable-contract:hover {
+    color: #90CAF9;
+    transform: scale(1.05);
+}

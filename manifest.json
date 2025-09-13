@@ -1,0 +1,108 @@
+{
+  "manifest_version": 3,
+  "name": "Arbitron Info Panel",
+  "version": "1.0.0",
+  "description": "Advanced trading information panel for cryptocurrency arbitrage opportunities",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://arbitron.dev/*",
+
+    "https://gmgn.ai/*",
+    "https://dexscreener.com/*",
+    "https://dextools.io/*",
+    "https://www.dextools.io/*",
+    "https://www.defined.fi/bsc/*",
+
+    "https://www.bitget.com/*",
+    "https://www.gate.io/*",
+    "https://www.gate.com/*",
+    "https://www.mexc.com/*",
+    "https://www.bybit.com/*",
+    "https://bingx.com/*",
+    "https://www.htx.com/*",
+    "https://www.bitmart.com/*",
+    "https://derivatives.bitmart.com/*",
+    "https://www.kucoin.com/*",
+    "https://www.lbank.com/*",
+    "https://www.xt.com/*",
+    "https://poloniex.com/*",
+    "https://www.poloniex.com/*",
+    "https://www.okx.com/*",
+    "https://www.binance.com/*",
+    "https://www.coinex.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gmgn.ai/*",
+        "https://dexscreener.com/*",
+        "https://dextools.io/*",
+        "https://www.dextools.io/*",
+        "https://www.defined.fi/bsc/*",
+
+        "https://www.bitget.com/*",
+        "https://www.gate.io/*",
+        "https://www.gate.com/*",
+        "https://www.mexc.com/*",
+        "https://www.bybit.com/*",
+        "https://bingx.com/*",
+        "https://www.htx.com/*",
+        "https://www.bitmart.com/*",
+        "https://derivatives.bitmart.com/*",
+        "https://www.kucoin.com/*",
+        "https://www.lbank.com/*",
+        "https://www.xt.com/*",
+        "https://poloniex.com/*",
+        "https://www.poloniex.com/*",
+        "https://www.okx.com/*",
+        "https://www.binance.com/*",
+        "https://www.coinex.com/*"
+      ],
+      "js": [
+        "js/security/security-helpers.js",
+        "js/utils/performance-optimizer.js",
+        "js/config/api-config.js",
+        "js/config/endpoints.js",
+        "js/config/chains.js",
+        "js/config/exchanges.js",
+        "js/config/styles.js",
+        "js/utils/number-formatter.js",
+        "js/utils/api-client.js",
+        "js/utils/storage-manager.js",
+        "js/utils/token-extractor.js",
+        "js/utils/url-change-listener.js",
+        "js/components/panel-ui.js",
+        "js/components/drag-handler.js",
+        "js/components/arbitron-panel.js",
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "css/panel-styles.css",
+        "css/common-styles.css", 
+        "css/cex-styles.css",
+        "css/futures-styles.css",
+        "css/networks-styles.css",
+        "css/dex-styles.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_title": "Arbitron Info Panel"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
